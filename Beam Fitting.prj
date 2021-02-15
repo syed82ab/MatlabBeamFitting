@@ -1,0 +1,92 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="384942602" file="C:\Users\syeda\OneDrive\Documents\MATLAB\Examples\R2019a\matlab\AppdImageHistogramsExample\Beam Fitting.prj" location="C:\Users\syeda\OneDrive\Documents\MATLAB\Examples\R2019a\matlab\AppdImageHistogramsExample" name="Beam Fitting" target="target.mlapps" target-name="Package App">
+    <param.appname>Beam Fitting</param.appname>
+    <param.authnamewatermark>Syed</param.authnamewatermark>
+    <param.email>syed.aljunid@gmail.com</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>Fits beam from file or camera with 2D gaussian. Returns position and waist in mm and rotation angle for beam axes not along camera axes</param.summary>
+    <param.description>Position and waists are returned in millimeters and angle in degrees
+Resize Factor shrinks the image by the factor (4) to improve fitting time.
+Pixel Conv performs a convolution of the nearest neighbours to smoothen out the image
+Rotation angle rotates the image to match the beam axis. Use this if the beam axis doesn't match camera(image) axis. Check box Fixed Rotation will make this a free parameter for fitting.
+
+xmin (ymin) is the minimum image pixel to fit the image and witdh (height) of the box to fit in pixels. This is useful if the beam is in a very small part of the image. This is represented by the green box
+Pixel size is the multiplication factor for calculating the x/y position and x/y waist. 
+
+Output of the fit are X and Y positions, gaussian beam waist in x and y all in mm. The resize factor is reversed to give the actual value of position and waists based on pixel size.
+
+Needs Optimazation toolbox for fitting, Image Processing toolbox for resize and rotation of image and image acquisition toolbox with support for USB Webcam for getting images from USB webcam. Thorlabs DCx needs DotNet dlls from Thorlabs. Thorlabs Scientific cameras not supported yet
+
+Use predefined test images to test fitting functions. Only Gaussian fits currently implemented.</param.description>
+    <param.screenshot>C:\Users\syeda\AppData\Local\Temp\tpc59ec2cd_96f4_42b7_a54a_02c4db5e60a8.png</param.screenshot>
+    <param.version>1.2</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Image Acquisition Toolbox</item>
+      <item>Image Processing Toolbox</item>
+      <item>Optimization Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>78</item>
+      <item>17</item>
+      <item>6</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.6</item>
+      <item>6.0</item>
+      <item>10.4</item>
+      <item>8.3</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>C:\Users\syeda\OneDrive\Documents\MATLAB\Examples</param.output>
+    <param.guid>eff8a80b-d51b-44bf-9457-88387a0155dd</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\BeamFitting.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\Utility.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamDesktop.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamOnline.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\@webcam\webcam.m</file>
+      <file>${PROJECT_ROOT}\fit_waist.m</file>
+      <file>${PROJECT_ROOT}\FitGauss2D_rot.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\airy beam.bmp</file>
+      <file>${PROJECT_ROOT}\Gaussian beam.bmp</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\syeda\OneDrive\Documents\MATLAB" name="Examples" optional="false">C:\Users\syeda\OneDrive\Documents\MATLAB\Examples</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Program Files\MATLAB\R2019a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
