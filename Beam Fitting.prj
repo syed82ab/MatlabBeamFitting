@@ -1,9 +1,9 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="384942602" file="D:\syeda\Repositories\MatlabBeamFitting\Beam Fitting.prj" location="D:\syeda\Repositories\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="839210336" file="C:\Users\S.Abdullah\OneDrive - Nanyang Technological University\Documents\MATLAB\MatlabBeamFitting\Beam Fitting.prj" location="C:\Users\S.Abdullah\OneDrive - Nanyang Technological University\Documents\MATLAB\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
     <param.appname>Beam Fitting</param.appname>
     <param.authnamewatermark>Syed</param.authnamewatermark>
     <param.email>syed.aljunid@gmail.com</param.email>
-    <param.company />
+    <param.company>CDPT NTU</param.company>
     <param.icon />
     <param.icons />
     <param.summary>Fits beam from file or camera with 2D gaussian. Returns position and waist in mm and rotation angle for beam axes not along camera axes</param.summary>
@@ -17,11 +17,13 @@ Pixel size is the multiplication factor for calculating the x/y position and x/y
 
 Output of the fit are X and Y positions (with respect to green box), gaussian beam waist in x and y all in mm. The resize factor is reversed to give the actual value of position and waists based on pixel size.
 
-Needs Optimization toolbox for fitting, Image Processing toolbox for resize and rotation of image and image acquisition toolbox with support for USB Webcam for getting images from USB webcam. Thorlabs DCx needs DotNet dlls from Thorlabs. Thorlabs Scientific cameras not supported yet
+Needs Optimazation toolbox for fitting, Image Processing toolbox for resize and rotation of image and image acquisition toolbox with support for USB Webcam for getting images from USB webcam. Thorlabs DCx needs DotNet dlls from Thorlabs. Thorlabs Scientific cameras not supported yet
 
-Use predefined test images to test fitting functions. Only Gaussian fits currently implemented.</param.description>
-    <param.screenshot>C:\Users\syeda\AppData\Local\Temp\tp8c6045fa_0048_4f86_a3ce_51172f71b9db.png</param.screenshot>
-    <param.version>1.2</param.version>
+Use predefined test images to test fitting functions. Only Gaussian fits currently implemented.
+
+Added live updates button for periodical update of Thorlabs camera. (Not tested for very small periods). Fitting will stop live update.</param.description>
+    <param.screenshot>C:\Users\S.Abdullah\AppData\Local\Temp\tp723e7879_4bc4_4bd6_9a56_61e4bb0568b9.png</param.screenshot>
+    <param.version>1.3</param.version>
     <param.products.name>
       <item>MATLAB</item>
       <item>Image Acquisition Toolbox</item>
@@ -41,13 +43,13 @@ Use predefined test images to test fitting functions. Only Gaussian fits current
       <item>8.3</item>
     </param.products.version>
     <param.platforms />
-    <param.output>C:\Users\syeda\OneDrive\Documents\MATLAB</param.output>
+    <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>eff8a80b-d51b-44bf-9457-88387a0155dd</param.guid>
     <unset>
-      <param.company />
       <param.icon />
       <param.icons />
       <param.platforms />
+      <param.output />
     </unset>
     <fileset.main>
       <file>${PROJECT_ROOT}\BeamFitting.mlapp</file>
@@ -57,6 +59,7 @@ Use predefined test images to test fitting functions. Only Gaussian fits current
       <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamDesktop.p</file>
       <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamOnline.p</file>
       <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\@webcam\webcam.m</file>
+      <file>C:\Users\S.Abdullah\OneDrive - Nanyang Technological University\Documents\MATLAB\Beam waist fit\after pinhole.bmp</file>
       <file>${PROJECT_ROOT}\fit_waist.m</file>
       <file>${PROJECT_ROOT}\FitGauss2D_rot.m</file>
     </fileset.depfun>
@@ -66,11 +69,11 @@ Use predefined test images to test fitting functions. Only Gaussian fits current
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\syeda\OneDrive\Documents" name="MATLAB" optional="false">C:\Users\syeda\OneDrive\Documents\MATLAB</file>
+      <file location="C:\Users\S.Abdullah\OneDrive - Nanyang Technological University\Documents\MATLAB" name="MatlabBeamFitting" optional="false">C:\Users\S.Abdullah\OneDrive - Nanyang Technological University\Documents\MATLAB\MatlabBeamFitting</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>D:\Program Files\MATLAB\R2019a</root>
+      <root>C:\Program Files\MATLAB\R2019a</root>
       <toolboxes />
     </matlab>
     <platform>
