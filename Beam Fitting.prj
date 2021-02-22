@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3733409638" file="D:\syeda\Repositories\MatlabBeamFitting\Beam Fitting.prj" location="D:\syeda\Repositories\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1108010753" file="D:\syeda\Repositories\MatlabBeamFitting\Beam Fitting.prj" location="D:\syeda\Repositories\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
     <param.appname>Beam Fitting</param.appname>
     <param.authnamewatermark>Syed</param.authnamewatermark>
     <param.email>syed.aljunid@gmail.com</param.email>
@@ -20,7 +20,7 @@ Output of the fit are X and Y positions (with respect to green box), gaussian be
 Needs Optimazation toolbox for fitting, Image Processing toolbox for resize and rotation of image and image acquisition toolbox with support for USB Webcam for getting images from USB webcam. Thorlabs DCx needs DotNet dlls from Thorlabs. Thorlabs Scientific cameras not supported yet
 
 Use predefined test images to test fitting functions. Only Gaussian fits currently implemented.</param.description>
-    <param.screenshot>C:\Users\syeda\AppData\Local\Temp\tpc55e0807_0011_4d84_bbba_f928794d8e16.png</param.screenshot>
+    <param.screenshot>C:\Users\syeda\AppData\Local\Temp\tpbde24944_057c_4e50_b35c_945a8fe4c5aa.png</param.screenshot>
     <param.version>1.3</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -53,10 +53,11 @@ Use predefined test images to test fitting functions. Only Gaussian fits current
       <file>${PROJECT_ROOT}\BeamFitting.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\Utility.p</file>
-      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamDesktop.p</file>
-      <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamOnline.p</file>
       <file>C:\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\@webcam\webcam.m</file>
+      <file>C:\Users\syeda\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\BeamFitting\C__\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\Utility.p</file>
+      <file>C:\Users\syeda\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\BeamFitting\C__\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamDesktop.p</file>
+      <file>C:\Users\syeda\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\BeamFitting\C__\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\+matlab\+webcam\+internal\webcamOnline.p</file>
+      <file>C:\Users\syeda\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\BeamFitting\C__\ProgramData\MATLAB\SupportPackages\R2019a\toolbox\matlab\webcam\supportpackages\@webcam\webcam.m</file>
       <file>${PROJECT_ROOT}\fit_waist.m</file>
       <file>${PROJECT_ROOT}\FitGauss2D_rot.m</file>
     </fileset.depfun>
