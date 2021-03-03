@@ -37,7 +37,7 @@ else
     fit_fn= @(param) FitGauss2D_rot(param,data,X,Y);
     P=lsqnonlin(fit_fn,P0,[],[],options);
 end
-data_fit=imrotate(gauss2d(P,X,Y),-P(end),'bilinear','crop');
+data_fit=gauss2d(P,X,Y);
 if ceil(P(3)) > size(data_fit,2)
     P_y_int=size(data_fit,2);
 elseif ceil(P(3)) < 1
