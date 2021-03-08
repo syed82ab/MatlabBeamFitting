@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="508280261" file="D:\syeda\Repositories\MatlabBeamFitting\Beam Fitting.prj" location="D:\syeda\Repositories\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1155062669" file="D:\syeda\Repositories\MatlabBeamFitting\Beam Fitting.prj" location="D:\syeda\Repositories\MatlabBeamFitting" name="Beam Fitting" target="target.mlapps" target-name="Package App">
     <param.appname>Beam Fitting</param.appname>
     <param.authnamewatermark>Syed</param.authnamewatermark>
     <param.email>syed.aljunid@gmail.com</param.email>
@@ -20,7 +20,7 @@ Output of the fit are X and Y positions (with respect to green box), gaussian be
 Needs Optimazation toolbox for fitting, Image Processing toolbox for resize and rotation of image and image acquisition toolbox with support for USB Webcam for getting images from USB webcam. Thorlabs DCx needs DotNet dlls from Thorlabs. Thorlabs Scientific cameras not supported yet
 
 Use predefined test images to test fitting functions. Only Gaussian fits currently implemented.</param.description>
-    <param.screenshot>C:\Users\syeda\AppData\Local\Temp\tp60918538_712a_4164_b1fe_942035fa4282.png</param.screenshot>
+    <param.screenshot>${PROJECT_ROOT}\BeamFitSplash.png</param.screenshot>
     <param.version>1.5</param.version>
     <param.products.name>
       <item>MATLAB</item>
